@@ -1,0 +1,65 @@
+<div class = "app-registroevento-container">
+    <body>
+        <div class="fondo">
+            <div class="fondooscuro">
+                <header>
+                    <nav>
+                        <!-- Logotipo y nombre -->
+                        <div class="halloween"></div>
+                        <ul class="logo-nombre">
+                            <span>ESPACIOS</span>
+                            <span>BOLIVIA</span>
+                        </ul>
+                        <!-- Menú principal centrado -->
+                        <ul class="menu">
+                            <li><a href="demostrations.html">INICIO</a></li>
+                            <li><a href="demostrations.html">CALENDARIO</a></li>
+                        </ul>
+                        <!-- Inicio de sesión y botón a la derecha -->
+                        <div class="right-section">
+                            <ul class="extra-menu">
+                                <li><a href="demostrations.html">NOMBRE DE USUARIO</a></li>
+                            </ul>
+                            <div class="halloween"></div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <div class="back-button">
+                <a href="pagina-anterior.html"><img src="/assets/flechavolver.jpg" alt="Volver" title="Volver"></a>
+            </div>
+                <section class="registro-evento">
+                    <h2>Registro de Evento</h2>
+                    <form action="submit_event.php" method="post">
+                        <div class="form-group">
+                            <label for="nombre-evento">Nombre del Evento:</label>
+                            <input type="text" id="nombre-evento" name="nombre-evento" placeholder="Escribe el nombre del evento" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-evento">Tipo de Evento:</label>
+                            <input type="date" id="tipo-evento" name="fecha-evento" placeholder="Escribe tipo de Evento" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-evento">Fecha del Evento:</label>
+                            <input type="text" id="fecha-evento" name="ubicacion-evento" placeholder="00/00/0000 (por defecto)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora-evento-inicio">Hora de inicio:</label>
+                            <textarea id="hora-evento-inicio" name="descripcion-evento" placeholder="00:00" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora-evento-finalizacion">Hora de Finalización:</label>
+                            <textarea id="hora-evento-finalizacion" name="descripcion-evento" placeholder="00:00" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="archivo-permisos">Adjunte carta con todos los permisos:</label>
+                            <input type="file" id="archivo-permisos" name="archivo-permisos" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Registrar Evento</button>
+                        </div>
+                    </form>
+                </section>  
+        </div>
+    </body>
+</div>

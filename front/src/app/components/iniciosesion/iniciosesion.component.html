@@ -1,0 +1,41 @@
+<div class="iniciosesion-container">
+  <div class="fondo">
+    <section class="fondoN">
+      <header>
+        <h1 id="titulo1">INICIO DE SESIÓN</h1>
+      </header>
+      <!-- FORMULARIO -->
+      <section class="container">
+        <form (ngSubmit)="iniciarSesion()">
+          <div class="inputGroup">
+            <label for="nombre">Nombre de usuario <span class="required">*</span></label>
+            <input
+              type="text"
+              id="nombre"
+              [(ngModel)]="nombre"
+              name="nombre"
+              required
+            />
+          </div>
+          <div class="back-button">
+            <a [routerLink]="['/iniciopagina']"> 
+              <img src="/assets/flechavolver.jpg" alt="Volver" title="Volver" />
+            </a>
+          </div>
+          <div class="inputGroup">
+            <label for="password">Contraseña <span class="required">*</span></label>
+            <input
+              type="password"
+              id="password"
+              [(ngModel)]="contrasena"
+              name="contrasena"
+              required
+            />
+          </div>
+          <button type="submit">Ingresar</button>
+        </form>
+        <p *ngIf="mensajeError" class="error">{{ mensajeError }}</p>
+      </section>
+    </section>
+  </div>
+</div>
